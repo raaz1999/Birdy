@@ -1,0 +1,48 @@
+/*dataset de notre projet*/
+
+message : (structure :nedb)
+{
+            "user_id": int,
+            "pseudo_name": string,
+            "message": string,
+            "message_id": int,
+            "comment": [
+                {
+                    "user_pseudo": string,
+                    "comment": string
+                }
+		.
+		.
+		.
+            ],
+            "date": new Date(),
+        }
+    ]
+}
+
+amis:  (structure :sql(sqlite3))
+table:
+from_user INTEGER,
+to_user INTEGER 
+
+requete :
+CREATE TABLE IF NOT EXISTS Friends (from_user INTEGER, to_user INTEGER )
+
+
+utilisateur :      (structure :sql(sqlite3))
+table:
+user_id INTEGER PRIMARY KEY  AUTOINCREMENT,
+fname VARCHAR(100),
+lname VARCHAR(100),
+pname VARCHAR(100) ,
+email VARCHAR(100),
+password VARCHAR(100)
+
+
+requete:
+CREATE TABLE IF NOT EXISTS data(user_id INTEGER PRIMARY KEY  AUTOINCREMENT,
+fname VARCHAR(100),
+lname VARCHAR(100),
+pname VARCHAR(100) ,
+email VARCHAR(100),
+password VARCHAR(100))
