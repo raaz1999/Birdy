@@ -1,0 +1,205 @@
+@font-face{
+    font-family: 'Kaushan Script';
+    src: url('../KaushanScript-Regular.otf');
+}
+
+h1{
+
+    text-align: center;
+    font-family: 'Kaushan Script', Helvetica, sans-serif;
+ 
+}
+
+body {
+
+    /*animation*/
+
+
+    background: linear-gradient(white, #659dd2);
+    background-repeat: no-repeat;
+
+    animation-name: ke1;
+    animation-duration: 3s;
+}
+
+.case {
+    margin-left: 30%;
+    margin-right: 30%;
+    /*min-block-size: 100px;*/
+    min-width: 400px;
+    border-radius: 15px;
+    border:1px solid black;
+    background-color: silver;
+    text-align: center;
+    margin-bottom: 1%;
+    color: black;
+    min-inline-size: 400px;
+    /*animation*/
+    animation-name: ke2;
+    animation-duration: 3s;
+}
+
+@keyframes ke1 {
+    from {background-color: #7540CC;}
+    to {background-color: #5bc2c5;}
+}
+
+@keyframes ke2 {
+    from {margin-left: 60%;}
+    to {margin-left: 30%;}
+}
+
+@keyframes ke3 {
+    from {margin-top: -20%;}
+    to {margin-top: 0%;}
+}
+
+
+.profil .info{
+    display: flex;
+    display: row;
+}
+
+.profil .info .friends{
+    margin:auto;
+}
+
+
+.profil .two_buttons{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    margin-left: 20%;
+}
+.profil .two_buttons button{
+    background-color:  #d6e7dc; /* Green */
+    border: none;
+    border-radius: 10px;
+    color: black;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; 
+    
+    
+}
+
+.profil .message .msg{
+    
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    background-color: rgb(255, 255, 255);
+    border-color: #eee #ddd #bbb;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    padding: 0 16px 16px 16px;
+    margin-left:20%;
+
+    font-family: Verdana;
+    font-size: 14px
+}
+
+
+.profil .friends .amis{
+
+    display: flex;
+    flex-direction: column;
+    min-width:  200pxpx;
+    background-color: rgb(255, 255, 255);
+    border-color: #eee #ddd #bbb;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    padding: 0 16px 16px 16px;
+    margin-left:20%;
+
+    font-family: Verdana;
+    font-size: 14px
+
+}
+
+
+.profil  .message .msg #fils{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.profil .message .msg #comment:hover{
+    background-color: silver; 
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #eee #ddd #bbb;
+    border-width: 3px;
+  
+}
+
+
+
+.profil .message .msg #comment ul{
+    display: none;
+}
+  
+  
+
+.profil  .message .msg #comment #addcomment{
+    display: none;
+}
+  
+.profil  .message .msg #comment:hover ul  {    
+    display:list-item !important;
+    list-style: none;
+}
+  
+  
+.profil .message .msg #comment ul li{
+    background-color: white; 
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #eee #ddd #bbb;
+    border-width: 3px;
+}
+
+.profil  .message .msg #comment:hover #addcomment{    
+    display: block;
+}
+  
+
+
+
+.profil  .message .msg h1{
+    display: flex;
+    flex: row;
+}
+
+.profil .two_buttons #vert:hover{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; 
+  
+}
+
+.profil .two_buttons #rouge:hover{
+    background-color: #cc4830; /* Green */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; 
+  
+}

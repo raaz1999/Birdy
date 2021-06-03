@@ -1,0 +1,256 @@
+@font-face{
+    font-family: 'Kaushan Script';
+    src: url('../KaushanScript-Regular.otf');
+}
+
+/*
+header
+{
+    background: rgb(78, 146, 202);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+*/
+
+header{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-color: #eee #ddd #bbb;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    padding: 0 16px 16px 16px;
+    margin-bottom: 1em;
+}
+
+header input{
+    height: 2.5ex;
+    width: 330px;
+    margin: auto;
+}
+
+header button{/*
+    height: 3ex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1ex;*/
+
+
+    height: 3.5ex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1ex;
+    color: black; 
+    background-color: transparent; 
+    border: 2px solid black; 
+    text-transform: uppercase; 
+    
+}
+
+header button:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid burlywood; 
+}
+
+header button:focus {
+    background-color: black;
+    color: blanchedalmond;
+}
+
+
+header h1{
+    margin-left: 1ex;
+    font-family: 'Kaushan Script',Arial, Helvetica, sans-serif;    
+}
+
+
+
+
+nav
+{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-color: #eee #ddd #bbb;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    padding: 0 16px 16px 16px;
+    margin-right: 0.5em;
+    
+}
+ul{
+	color: black;
+}
+
+
+#display section
+{
+    display: flex;
+    min-width: 400px;
+    flex-grow: 4;
+    background-color: rgb(255, 255, 255);
+    border-color: #eee #ddd #bbb;
+    border-radius: 5px;
+    border-style: solid;
+    margin-left: auto;
+    border-width: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    padding: 0 16px 16px 16px; 
+}
+
+body{
+
+    background: linear-gradient(white, #659dd2);
+    background-repeat: no-repeat;
+}
+
+#display #récuperer_msg .msg{
+    
+    display: flex;
+    flex-direction: column;
+    
+    background-color: rgb(255, 255, 255);
+    border-color: #eee #ddd #bbb;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    padding: 0 16px 16px 16px;
+    margin: auto;
+    font-family: Verdana;
+    font-size: 14px
+}
+
+
+#display #récuperer_msg .msg #fils{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+#display #récuperer_msg .msg #comment:hover{
+    background-color: silver; 
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #eee #ddd #bbb;
+    border-width: 3px;
+  
+}
+
+
+
+#display #récuperer_msg .msg #comment ul{
+    display: none;
+}
+  
+  
+
+#display #récuperer_msg .msg #comment #addcomment{
+    display: none;
+}
+  
+#display #récuperer_msg .msg #comment:hover ul  {    
+    display:list-item !important;
+    list-style: none;
+}
+  
+  
+#display #récuperer_msg .msg #comment ul li{
+    background-color: white; 
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #eee #ddd #bbb;
+    border-width: 3px;
+}
+
+#display #récuperer_msg .msg #comment:hover #addcomment{    
+    display: block;
+}
+  
+
+
+
+#display #crée_msg{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    background-color: rgb(255, 255, 255);
+    border-color: #eee #ddd #bbb;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    padding: 0 16px 16px 16px;
+    margin: auto;
+    font-family: Verdana;
+    font-size: 14px
+}
+
+
+  
+  
+
+#display #crée_msg .fils{
+    display: flex;
+    flex-direction: row;
+}
+  
+  
+#display #crée_msg   .fils  label{
+     margin : auto ; 
+
+}
+  
+  
+#display #crée_msg button{
+    
+    margin:auto;
+  
+    height: 30px
+}
+  
+  
+  
+#display #crée_msg button:hover {
+      background-color: black;
+      color: white;
+      border: 2px solid burlywood; 
+}
+  
+#display #crée_msg button:focus {
+      background-color: blanchedalmond;
+      color: black;
+}
+
+aside{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-color: #eee #ddd #bbb;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    padding: 0 16px 16px 16px;
+}
+
+#mere 
+{
+	display: flex;
+    flex-direction: row;
+	margin: auto;
+}
+
+
+#display{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}

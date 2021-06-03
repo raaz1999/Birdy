@@ -1,0 +1,77 @@
+@font-face{
+    font-family: 'Kaushan Script';
+    src: url('../KaushanScript-Regular.otf');
+}
+
+
+
+#logo h1{
+  font-family: 'Kaushan Script',Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: auto;
+
+}
+
+.register .main{
+     
+   
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    background-color: rgb(255, 255, 255);
+    border-color: #eee #ddd #bbb;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    padding: 0 16px 16px 16px;
+    margin: auto;
+    font-family: Verdana;
+    font-size: 14px
+
+}
+.register h1{
+   font-family: Arial,Verdana;
+}
+
+
+
+.information {
+   display: flex;
+   flex-direction: column;
+}
+
+
+
+.b\&l{   
+    
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.b\&l  button{
+  
+  margin:auto;
+
+  height: 30px
+}
+
+body{
+    min-height: 1000px;
+    background: linear-gradient(white, #659dd2);
+    background-repeat: no-repeat;
+}
+
+.b\&l button:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid burlywood; 
+}
+
+.b\&l button:focus {
+    background-color: blanchedalmond;
+    color: black;
+}

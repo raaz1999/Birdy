@@ -1,0 +1,209 @@
+@font-face{
+    font-family: 'Kaushan Script';
+    src: url('../KaushanScript-Regular.otf');
+}
+
+/*
+header
+{
+    background: rgb(78, 146, 202);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+*/
+
+header{
+    display: flex;
+    
+    background-color: rgb(255, 255, 255);
+    border-color: #eee #ddd #bbb;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    padding: 0 16px 16px 16px;
+    margin-bottom: 1em;
+}
+
+header input{
+    height: 2.5ex;
+    width: 330px;
+    margin: auto;
+}
+#deconnect_message{/*
+    height: 3ex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1ex;*/
+
+
+    height: 2%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1ex;
+    color: black; 
+    background-color: transparent; 
+    border: 2px solid black; 
+    text-transform: uppercase; 
+    margin-left: auto;
+    
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid burlywood; 
+}
+
+button:focus {
+    background-color: black;
+    color: blanchedalmond;
+
+}
+
+
+
+#messagetext button {
+    margin-left: 3px;
+    color: black; 
+    background-color: transparent; 
+    border: 2px solid black; 
+    text-transform: uppercase; 
+}
+
+
+#messagetext button:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid burlywood; 
+}
+
+#messagetext button:focus {
+    background-color: black;
+    color: blanchedalmond;
+}
+
+#messagetext input{
+  /*width:*/ 
+  margin-left: 10px;
+}
+
+
+#messagetext{
+    margin-top: 35%;
+}
+.chatt{
+    width: 100%;
+    margin-left: 10px;
+  
+}
+
+
+
+header h1{
+    margin-left: 1ex;
+    font-family: 'Kaushan Script',Arial, Helvetica, sans-serif;    
+}
+
+
+body
+{
+    background-attachment: no-repeat; /* Le fond restera fixe */
+
+}
+
+nav
+{
+
+    /*
+	float: left;	
+	box-shadow: 6px 6px 6px black;
+    border: 3px black solid;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: white; 
+    padding-right: 50px;
+    min-height:500px;*/
+
+
+
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-color: #eee #ddd #bbb;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    padding: 0 16px 16px 16px;
+
+    margin-right: 0.5em;
+    
+}
+ul{
+	color: black;
+}
+
+td {
+    border: 1px solid #333;
+}
+
+
+.vertical-line{
+    border-left: 4px solid #000;
+    border-radius: 10px;
+    
+    height:auto;
+    /*
+    min-height:300px;
+   margin-right:  auto;
+    margin-top:20px;
+    
+    margin-left:10%;*/
+}
+
+
+hr {
+    border: none;
+    border-top: 3px solid  ;  
+}
+
+
+.amis div{
+    font-family: Helvetica, sans-serif; 
+
+}
+
+.amis div:hover{
+   
+    font-family: 'Kaushan Script',Arial, Helvetica, sans-serif;     
+}
+
+
+.amis{
+    width:260px;
+  float: left;
+   
+
+}
+
+.mere
+{
+
+    height:auto;
+    min-height:400px;
+    background-color: rgb(255, 255, 255);
+    border-color: #eee #ddd #bbb;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    padding: 0 16px 16px 16px;
+    margin-right: 2ex;
+	display: flex;
+    flex-direction: row;
+    
+}
+

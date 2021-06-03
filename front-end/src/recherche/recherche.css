@@ -1,0 +1,106 @@
+.recherche .info_msg{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.recherche .info_msg #bare_de_recherche{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    background-color: rgb(255, 255, 255);
+    border-color: #eee #ddd #bbb;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    padding: 16px 16px 16px 16px;
+    max-height: 20ex;
+    font-family: Verdana;
+    font-size: 14px
+}
+
+.recherche .info_msg #bare_de_recherche button{
+    margin: auto;
+}
+
+
+.recherche .info_msg #messages{
+    margin: auto;
+    min-width: 400px;
+
+}
+
+body{
+    background: linear-gradient(white, #659dd2);
+    background-repeat: no-repeat;
+    min-height: 900px;
+}
+
+.recherche .info_msg .msg{
+    
+    display: flex;
+    flex-direction: column;
+    
+    background-color: rgb(255, 255, 255);
+    border-color: #eee #ddd #bbb;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    padding: 0 16px 16px 16px;
+    margin: auto;
+    font-family: Verdana;
+    font-size: 14px
+}
+
+
+.recherche .info_msg.msg #fils{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.recherche .info_msg .msg #comment:hover{
+    background-color: silver; 
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #eee #ddd #bbb;
+    border-width: 3px;
+  
+}
+
+
+
+.recherche .info_msg .msg #comment ul{
+    display: none;
+}
+  
+  
+
+.recherche .info_msg .msg #comment #addcomment{
+    display: none;
+}
+  
+.recherche .info_msg .msg #comment:hover ul  {    
+    display:list-item !important;
+    list-style: none;
+}
+  
+  
+.recherche .info_msg .msg #comment ul li{
+    background-color: white; 
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #eee #ddd #bbb;
+    border-width: 3px;
+}
+
+.recherche .info_msg #comment:hover #addcomment{    
+    display: block;
+}
+  
+
+
