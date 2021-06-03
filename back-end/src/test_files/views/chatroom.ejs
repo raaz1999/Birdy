@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Simple Chat</title>
+    <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+    <style type="text/css">
+        
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          background-color: white;
+        }
+
+        * {
+          box-sizing: border-box;
+        }
+
+        /* Add padding to containers */
+        .container {
+          display: inline-block;
+          font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+          font-size: 12px;
+          font-weight: bold;
+          line-height: 16px;
+          background-color: white;
+          border-color: #eee #ddd #bbb;
+          border-radius: 5px;
+          border-style: solid;
+          border-width: 1px;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+          margin: 10px 5px;
+          padding: 0 16px 16px 16px;
+          max-width: 468px;
+        }
+
+        .container p {
+          font-size: 16px;
+          font-weight: normal;
+          line-height: 20px;
+        }
+
+        .container a {
+          color: inherit;
+          font-weight: normal;
+          text-decoration: none;
+          outline: 0 none;
+        }
+
+        .container small{
+          color: silver;
+          font-size: 9px;
+        }
+
+        a {
+          color: dodgerblue;
+        }
+
+
+    </style>
+    <meta name="author" content="Stephan Soller" />
+</head>
+
+
+
+
+
+<body>
+
+
+
+  <%  if(typeof allmsg !== 'undefined'){    %>
+    <%allmsg.forEach(m=>{ %>
+
+      <div class="container">
+       
+        <%var date = ("0" + m.date.getDate()).slice(-2);%>
+
+        
+        <%var month = ("0" + (m.date.getMonth() + 1)).slice(-2);%>
+
+        
+        <%var year = m.date.getFullYear();%>
+
+       
+        <%var hours = m.date.getHours();%>
+
+       
+        <%var minutes = m.date.getMinutes();%>
+
+        
+        <%var seconds = m.date.getSeconds();%>
+
+
+        <% var all=year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds %>
+        <h2><%= m.pseudo_name%>  <small><%= all%></small></h2>
+        
+        <p><%= m.message %></p>
+      
+      </div>
+    </br>
+    <%})}%>
+
+ 
+ 
+
+  
+ 
+
+<form action="/message/make_msg" method="post">
+    <p>
+        <input type="text" name="message" id="message" />
+    </p>     
+    
+    <button type="submit">Send</button>
+  
+</form>
+<form action="/message/get_message" method="get">
+  
+    <button type="submit">get my message</button>
+
+</form>
+
+
+
+</body>
+</html>
